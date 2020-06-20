@@ -9,7 +9,7 @@
 <body>
   <div id="container">
     <div id="logo">
-      <h2 class="logo" style="color:red">LEEWARD ISLAND</h2>
+      <h2 class="logo">LEEWARD ISLAND</h2>
     </div>
 
     <div id="top">
@@ -25,11 +25,15 @@
         <div onclick="toggleMe('testHidden')" class="accordinside1vis">          
           <h2 id="testblue">What Oxfords are?</h2>
         </div>
-        <div class="accordinside1hidden" id="testHidden" style="display: none;">    
-          <p>The Oxford is probably the most elegant and famous of the English shoe designs. The term Oxford relates to the v shaped split made where the shoe fastens.
+        <div class="accordinside1hidden" id="testHidden" style="display: none;    border-top: 1px solid #280B0B;
+        padding: 10px 5px;">   
+                    <img src="oxfordGuide.jpg" alt="oxfords" style="  max-width: 100%;
+                    margin:auto;
+                    display:block;"> 
+          <p style="padding: 9px 3px;">The Oxford is probably the most elegant and famous of the English shoe designs. The term Oxford relates to the v shaped split made where the shoe fastens.
             On an Oxford shoe the laces and facing give the top of the shoe a very smooth and sleek line making them ideal for the narrower foot and elegant longer lasts.
             An Oxford shoe is seen as the most formal of designs; perfect for the office, weddings, interviews and other important occasions.</p>
-            <img src="icon-arrow.svg" alt="icon" style="padding-left: 20px;">
+
         </div>
       </div>
 <script>
@@ -89,7 +93,7 @@
       </script>
     </div>
   </div>
-  <img src="oxfords1.jpg" alt="oxfords">
+  
   <script>
          document.querySelectorAll('.matchImage').forEach(img =>{
      img.addEventListener('click',()=>{
@@ -104,7 +108,7 @@
     
 
 
-     document.getElementById("testblue").style.color ="blue";
+    //  document.getElementById("testblue").style.color ="blue";
 
   })
 })
