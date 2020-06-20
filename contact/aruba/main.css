@@ -70,20 +70,26 @@ h2.logo {
 } */
 #accordion > div{
   border: 1px solid rgb(28, 28, 31);
-  background:url("icon-arrow.svg") no-repeat;
-  background-position: bottom 7px center ;
+  /* background:url("icon-arrow.svg") no-repeat;
+  background-position: bottom 7px center ; */
   padding: 5px 5px;
   margin-bottom: 10px;
 }
 
-.accordinside1vis{
-  height: 9vh;
+#accordion div div h2::after{
+  content: '\25be';
+  float: right;
+  transform: scale(1);
 }
+
+/* .accordinside1vis{
+  height: 9vh;
+} */
 #accordion div div h2  { 
   width: 100%; 
-  text-align: center;
-  padding:20px 10px; 
-  font: Georgia, serif;
+  text-align: left;
+  padding:2px 2px; 
+  font-family: Georgia, serif;
   font-weight: normal;
 }
 
