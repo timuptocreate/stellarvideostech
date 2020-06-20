@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oxfords</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="container">
+    <div id="logo">
+      <h2 class="logo" style="color:red">LEEWARD ISLAND</h2>
+    </div>
+
+    <div id="top">
+      <h2><span>Oxfords</span></h2>
+      <img src="oxfords1.jpg" alt="oxfords">
+
+    </div>
+    <div id="top1">
+
+    </div>
+    <div id="accordion">
+      <div class="accordinside1">
+        <div onclick="toggleMe('testHidden')" class="accordinside1vis">          
+          <h2 id="testblue">What Oxfords are?</h2>
+        </div>
+        <div class="accordinside1hidden" id="testHidden" style="display: none;">    
+          <p>The Oxford is probably the most elegant and famous of the English shoe designs. The term Oxford relates to the v shaped split made where the shoe fastens.
+            On an Oxford shoe the laces and facing give the top of the shoe a very smooth and sleek line making them ideal for the narrower foot and elegant longer lasts.
+            An Oxford shoe is seen as the most formal of designs; perfect for the office, weddings, interviews and other important occasions.</p>
+            <img src="icon-arrow.svg" alt="icon" style="padding-left: 20px;">
+        </div>
+      </div>
+<script>
+  function toggleMe(a) {
+   var e = document.getElementById(a);
+  //  var toggleIcon = document.getElementById('toggle-icon');
+   if(!e) return true;
+
+   if(e.style.display == "none") {
+      e.style.display = "block";
+      // toggleIcon.innerHTML = '-';
+   }
+   else {
+      e.style.display = "none";
+      // toggleIcon.innerHTML = '+';
+   }
+   return true;
+}
+</script>
+      <div class="accordinside2">
+        <div class="accordinside2vis" onclick="return toggleMe('accordinside2hidden')">
+          <h2>Colors and Match</h2>
+        </div>
+        <!-- style="display: none;" -->
+        <div id="accordinside2hidden" style="display: none;">
+          <div class="shoesMatch">
+            <img src="brownOxfMatch.jpg" class="matchImage" alt="brownOxfMatch">
+            <div class="shoesMatchHidden">
+              <p>“A pair of black Oxfords is probably the most dressed-up shoe you can have in your wardrobe,” says Luke McDonald, stylist at men’s online styling service Thread. “And that limits what other clothes you can wear them with.” You can think of them a little like a black blazer; they look great dressed up, but try them with jeans and you begin to look like a street magician.To start from the top down, black should be your go-to for black tailoring, whether you need something for black tie or just a formal work shoe. “They also team well with grey or charcoal tailoring, particularly in more formal offices,”</p>
+              <img src="brownOxfMatchSuits.jpg" alt="suits">
+            </div>
+          </div>
+          <div class="shoesMatch">
+            <img src="blackOxfMatch.jpg" alt="brownOxfMatch">
+          </div>
+          
+        </div>
+      </div>
+      <script>
+        function toggleMe2(a) {
+         var e = document.getElementById(a);
+        //  var toggleIcon = document.getElementById('toggle-icon');
+         if(!e) return true;
+      
+         if(e.style.display == "none") {
+            e.style.display = "block";
+            // toggleIcon.innerHTML = '-';
+         }
+         else {
+            e.style.display = "none";
+            // toggleIcon.innerHTML = '+';
+         }
+         return true;
+      }
+
+
+      </script>
+    </div>
+  </div>
+  <img src="oxfords1.jpg" alt="oxfords">
+  <script>
+         document.querySelectorAll('.matchImage').forEach(img =>{
+     img.addEventListener('click',()=>{
+    //  const accordionContent = img.nextElementSibling;
+    var matchSuit = img.nextElementSibling;
+
+    if(matchSuit.style.maxHeight == 0||matchSuit.style.maxHeight == 0 + 'px'){
+      matchSuit.style.maxHeight = matchSuit.scrollHeight + 'px';
+    } else {
+      matchSuit.style.maxHeight = 0;
+    }
+    
+
+
+     document.getElementById("testblue").style.color ="blue";
+
+  })
+})
+  </script>
+</body>
+</html>

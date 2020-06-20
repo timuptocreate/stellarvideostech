@@ -1,0 +1,114 @@
+@font-face{
+  font-family: AbrilFatface-Regular;
+  src: url(AbrilFatface-Regular.ttf)
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  width: 100%;
+}
+
+/* #container{
+ width: 96%;
+  margin:0 auto;
+  padding: 10px;
+  overflow: none;
+} */
+
+#logo {
+  background-color: #171202;
+  background-position: top;
+  width: 100%;
+  height: 15vw;
+  box-shadow: 2px 2px 5px #888;
+}
+h2.logo {
+  font-family: AbrilFatface-Regular, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  padding: 10px;  
+}
+
+#top {
+  padding: 30px 20px;
+  
+  
+}
+#top h2{
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+#top h2 span { 
+  background:#fff; 
+  padding:20px 10px; 
+  font: Georgia, serif;
+  font-weight: normal;
+}
+
+#top img{   
+  max-width: 100%;
+  height: auto;  
+  padding:20px 10px; 
+}
+#accordion{
+  width: auto;
+  padding: 25px 20px;
+}
+/* .accordinside1{
+  border: 1px solid rgb(28, 28, 31);
+  background:url("icon-arrow.svg") no-repeat;
+  background-position: bottom 7px center ;
+} */
+#accordion > div{
+  border: 1px solid rgb(28, 28, 31);
+  background:url("icon-arrow.svg") no-repeat;
+  background-position: bottom 7px center ;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+}
+
+.accordinside1vis{
+  height: 9vh;
+}
+#accordion div div h2  { 
+  width: 100%; 
+  text-align: center;
+  padding:20px 10px; 
+  font: Georgia, serif;
+  font-weight: normal;
+}
+
+/* .accordinside1vis h2  { 
+  width: 100%; 
+  text-align: center;
+  padding:20px 10px; 
+  font: Georgia, serif;
+  font-weight: normal;
+} */
+
+.shoesMatch{
+  border-top: 1px solid #280B0B;
+}
+.shoesMatch img{
+  max-width: 95%;
+  margin:auto;
+  display:block;
+}
+
+.shoesMatchHidden{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+.shoesMatchHidden > p{
+  padding: 1vh;
+}

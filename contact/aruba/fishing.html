@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <p id = "target" class = "targetclass">whats going on</p>
+  <img src="blackOxfMatch.jpg" class="toshow" alt="">
+  <div class="toshowdiv">
+    <img src="brownOxfMatch.jpg" class="toshow" alt="">
+  </div>
+  <div class="toshowbutton">
+    <button type="button" class="accordionbutton"></button>
+  </div>
+  <script>
+document.getElementsByClassName("targetclass")[0].style.color ="blue";
+
+document.querySelectorAll('.toshow').forEach(img =>{
+img.addEventListener('click',()=>{
+document.getElementById("target").style.color ="red";
+})
+})
+</script>
+</body>
+</html>
