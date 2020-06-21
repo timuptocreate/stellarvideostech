@@ -91,7 +91,8 @@ h2.logo {
   padding:2px 2px; 
   font-family: Georgia, serif;
   font-weight: normal;
-}
+  font-size: 19px;
+  }
 
 /* .accordinside1vis h2  { 
   width: 100%; 
