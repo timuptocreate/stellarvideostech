@@ -216,6 +216,9 @@ background-color: #cacaa1; */
   max-height: 0;
   transition: max-height 1s;
 }
+.shoematchhidd p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .shoematccoll{
   padding: 20px 20px;
@@ -225,7 +228,7 @@ background-color: #cacaa1; */
   text-align: center; 
   border-bottom: 1px solid #000; 
   line-height: 0.1em;
-  font: Georgia, serif;
+  font-family: Georgia, serif;
   margin: 10px 0 20px; 
 }
 
