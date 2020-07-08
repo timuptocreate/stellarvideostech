@@ -32,7 +32,7 @@
   <script src="anime.min.js"></script>
 
   <div id="shoecontent">
-    <div class="shoetype"><p id = "ptest"> </p>
+    <div class="shoetype">
       <img src="images/typeoxford@2x.jpg" alt="" class="shoetypeimg">
 
       <div class="shoetypehidd"><p class="shoetypecontword">关于</p>
@@ -46,13 +46,51 @@
         <p class="shoetypecontword">穿搭</p>
             <p class="shoetypecont">牛津鞋的搭配相对比较简单，搭配任意西装，牛津鞋属于百搭的款式，可以适当搭配一些颜色比较鲜艳的长袜作为配搭，西裤最好是九分裤，能露出一小节袜子最佳，袜子和领带配衬，选择和领带色彩相同的袜子做呼应，令造型增加细节感，更显品味与别致。</p>
         <div class="shoematch"><img class="shoematchbutt" src="images/blackOxfMatch.jpg" alt="">
-          <div class="shoematchhidd"><p>Hidden shoematch</p></div>
+          <div class="shoematchhidd"><p>“A pair of black Oxfords is probably the most dressed-up shoe you can have in your wardrobe,” says Luke McDonald, stylist at men’s online styling service Thread. “And that limits what other clothes you can wear them with.” You can think of them a little like a black blazer; they look great dressed up, but try them with jeans and you begin to look like a street magician.To start from the top down, black should be your go-to for black tailoring, whether you need something for black tie or just a formal work shoe. “They also team well with grey or charcoal tailoring, particularly in more formal offices”</p>
+          <img src="images/blackOxfMatchSuits.jpg" alt="suits">
+          <div class="logosmal" style="background-color: #080808;">
+            <h1 class="ml6">
+              <span class="text-wrapper">
+                <span class="letters">LEEWARD ISLAND</span>
+              </span>
+            </h1>
+          </div>
+          <div class="shoematccoll">
+          <h3><span>Collection</span></h3>
+          </div>
+          <div class="shop">
+            <img src="images/shopoxfoblac.jpg" alt="">
+          </div>
+          </div>
         </div>
         <div class="shoematch"><img class="shoematchbutt" src="images/brownOxfMatch.jpg" alt="">
-          <div class="shoematchhidd"><p>Hidden shoematch</p></div>
+          <div class="shoematchhidd">
+            <p>Brown leather Oxfords are the perfect option when 
+            paired with a grey, dark brown or navy suit. Rather than 
+            wearing black, a brown Oxford is far more striking when paired with these colours and you will visually stand out.
+            Avoid wearing brown shoes with a black suit. Simple right?</p>
+            <img src="images/brownOxfMatchSuits.jpg" alt="suits">
+            <div class="logosmal" style="background-color: #654321;"><h1 class="ml6">
+              <span class="text-wrapper">
+                <span class="letters">LEEWARD ISLAND</span>
+              </span>
+            </h1>
+          </div>
+          </div>
         </div>
-        <div class="shoematch"><img src="images/burgOxfMatch.jpg" alt="">
-          <div class="shoematchhidd"></div>
+        <div class="shoematch"><img class="shoematchbutt" src="images/burgOxfMatch.jpg" alt="">
+          <div class="shoematchhidd">                 <p>The most unexpected combination 
+              with blue or black jeans is perfect. 
+              The touch of blue denim colour blends perfectly with the red tone and black jeans blend in perfectly with the dark burgundy veins and contrast perfectly with the brightness of the leather.Entering more formal lines, both with a blazer and a full blue or grey suit is a winning combination. The contrast of cold tones with dark red is very pleasing to the eye. And for suits in black or very dark tones, red falls into the complementary colours, so the combination is super correct.</p>
+            <img src="images/burgOxfMatchSuits.jpg" alt="suits">
+            <div class="logosmal" style="background-color: #3d0211;">
+              <h1 class="ml6">
+                <span class="text-wrapper">
+                  <span class="letters">LEEWARD ISLAND</span>
+                </span>
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
       <button type="button" class="shoetypebtn">Oxford</button>
@@ -218,7 +256,12 @@ var shoeType = btn.previousElementSibling;
 
 btn.classList.toggle('shoetypebtn_active');
 if(shoeType.style.maxHeight == 0||shoeType.style.maxHeight == 0 + 'px'){
-  shoeType.style.maxHeight = shoeType.scrollHeight + 'px';
+  
+  // shoeType.style.maxHeight = shoeType.scrollHeight + 'px';
+  shoeType.style.maxHeight = '3300px';
+  // setTimeout(shoeType.style.maxHeight = 'fit-content',3000);
+  
+  
 } else {
   shoeType.style.maxHeight = 0;
 }
