@@ -1,0 +1,198 @@
+/* 
+Background color of Type shoes Div
+background-color: #cacaa1; */
+/* background-color: #b69d9d; */
+/* border: 1px solid #000;  */
+  /* border: 1px solid #000;  */
+  /* background-color: #b9b9b7; */
+  /* border: 1px solid #000;  */
+  html, body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    width: 100%;
+  }
+  #logo {
+    background-color: #171202;
+    background-position: top;
+    width: 100%;
+    height: 15vw;
+   }
+  h2.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
+    color: white;
+    padding: 10px;  
+    text-align: center;
+  }
+  /* ! Animation */
+  .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 2.3em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  /* !------------------------- */
+  .shoebrif{
+    padding: 30px 20px;
+  }
+  .shoebrif h2{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+  }
+  .shoebrieanim{
+    width: auto; 
+    text-align: center; 
+    padding: 10px 10px;
+  }
+  
+  .shoebrif h2 span { 
+    background:#fff; 
+    padding:20px 10px; 
+    font: Georgia, serif;
+    font-weight: normal;
+  }
+  /*! Animation */
+
+  .ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: #402d2d;
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 200%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+#shoecontent{
+  width: auto;
+  padding: 25px 20px;
+  /* background-color: #b9b9b7; */
+  padding: 3px;
+  /* border: 1px solid #000;  */
+
+  font-size: 13px;
+  font-family: "Arial",sans-serif;
+  font-family: "PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei","SimHei",Helvetica,Arial;
+  line-height: 1.85;
+  color: #666;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  
+}
+.shoetype{
+  width: 90%;
+  margin:auto;
+  /* background-color: #cacaa1; */
+  background-color: hsl(0, 0%, 100%);
+  padding: 3px;
+  /* border: 1px solid #000;  */
+}
+.shoetype img{
+  max-width: 95%;
+  margin:auto;
+  display:block;
+}
+.shoetypecontword{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(12, 11, 11);
+}
+.shoetypebtn{
+  margin: auto;
+  display: block;
+  width: 30%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: #000;
+  color: aliceblue;
+  text-align: center;
+  transition: width 1s;
+}
+.shoetypebtn::after{
+  content: '\25be';
+  /* float: center; */
+  
+}
+.shoetypebtn_active{
+  margin-top: 7px;
+  width: 98%;
+}
+.shoetypebtn_active::after{
+  content: '\25b4';
+  
+}
+.shoetypehidd{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+.shoematch{
+  width: 85%;
+  margin:auto;
+  /* background-color: #b69d9d; */
+  padding: 3px;
+  /* border: 1px solid #000;  */
+}
+.shoematch img{
+  max-width: 95%;
+  margin:auto;
+  display:block;
+}
+.shoematchhidd{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
